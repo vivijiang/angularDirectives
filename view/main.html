@@ -49,9 +49,10 @@
                 <h1>AngularJS learning test</h1>
                 <section>
                     <h2>What will happen if scope = false ?</h2>
+                     <button ng-click="setAppTitle('app')"> set app title</button>
                     <span>{{title}}</span>
                     <div scope-false>
-                        <button ng-click="setDirectiveTitle('vivi')"> set title</button>
+                        <button ng-click="setDirectiveTitle('vivi')"> set directive title</button>
                         {{title}}
                     </div>
                 </section>

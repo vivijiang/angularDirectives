@@ -5,7 +5,6 @@ odinFormDirectives.directive('ajaxForm', ['$http',
 function($http) {
 return {
 restrict: 'A',
-
 controller: function($scope, $element, $attrs) {
 
 	var getSubmitData = $scope[$attrs['submitData']];

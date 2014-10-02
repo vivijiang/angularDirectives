@@ -8,13 +8,13 @@ restrict: 'A',
 
 controller: function($scope, $element, $attrs) {
 
-	var formDataFunction = $scope[$attrs['formData']];
+	var getSubmitData = $scope[$attrs['submitData']];
 	var formCallbacks = $scope[$attrs['formCallback']];
 
 	$scope.ajaxSubmit=function($event){
 
-$event.preventDefault();
-		var formData = formDataFunction();
+	$event.preventDefault();
+		var formData = getSubmitData();
 
 		var action= $element.attr('action');
 		console.log('submit action:' +action)

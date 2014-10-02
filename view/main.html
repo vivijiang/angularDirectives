@@ -57,6 +57,16 @@
                     </div>
                 </section>
 
+                 <section>
+                    <h2>What will happen if scope = true ?</h2>
+                     <button ng-click="setAppTitle('app')"> set app title</button>
+                    <span>{{title}}</span>
+                    <div scope-true>
+                        <button ng-click="setDirectiveTitle('vivi')"> set directive title</button>
+                        {{title}}
+                    </div>
+                </section>
+
             </div>
         </div>
         <footer>

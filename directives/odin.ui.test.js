@@ -35,4 +35,17 @@ uitest.directive('scopeFalse',[function(){
 		}
 	};
 }]);
+
+uitest.directive('scopeTrue',[function(){
+	return {
+		restrict: 'A',
+		scope: true,
+		link: function($scope, $element, $attrs){
+			$scope.setDirectiveTitle =function(title){
+				$scope.title=title;
+			};
+		}
+	};
+}]);
+
 })(jQuery);

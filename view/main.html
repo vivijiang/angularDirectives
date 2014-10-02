@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="odinapp">
     <head>
         <meta charset="UTF-8">
         <title>Learn Apex Homepage</title>
@@ -27,16 +27,18 @@
             </div>
         </div>
         <div id="ajaxform">
-            <div class="container">
+            <div class="container" ng-controller="demoFormController">
                 <h1>Form - Ajax form</h1>
-                <form class="form-horizontal" id="ajaxform-test" action="#" form-ajax>
+                <form class="form-horizontal" id="ajaxform-test" action="#" ajax-form form-data="formData" form-callback="formCallBack">
+                    <span>{{odindemo}}</span>
                     <div class="form-group">
                         <label class="col-xs-2">Business Unit</label>
                         <div class="col-xs-3">
                             <input type="text" class="form-control" ng-model="businessUnit" />
                         </div>
                     </div>
-                    <button type="submit" class="btn btn-primary">submit</button>
+                    <button type="submit" class="btn btn-primary" ng-click="ajaxSubmit($event)">submit
+                    </button>
                 </form>
             </div>
             
@@ -48,5 +50,9 @@
             </div>
         </footer>
         <script src="../lib/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="../directives/odin.ui.js" type="text/javascript"></script>
+        <script src="../directives/odin.ui.form.js" type="text/javascript"></script>
+        <script src="../js/main.js" type="text/javascript"></script>
+        <script src="../js/demo.form.js" type="text/javascript"></script>
     </body>
 </html>

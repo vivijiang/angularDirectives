@@ -2,6 +2,7 @@
 
 (function($) {
 var odinapp = angular.module('odinapp', [
-	'demo.form.js'
+	'demo.form',
+	'demo.test'
 	]);
 })(jQuery);

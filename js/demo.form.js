@@ -1,7 +1,7 @@
 'use strict';
 
 (function($) {
-var demoForm = angular.module('demo.form.js', ['odin.ui']);
+var demoForm = angular.module('demo.form', ['odin.ui']);
 demoForm.controller('demoFormController',function($scope, $element){
 	$scope.odindemo='odindemo';
 	$scope.businessUnit = 'businessUnit default value';

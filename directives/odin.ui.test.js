@@ -25,7 +25,7 @@ $element.autocomplete({
 }
 ]);
 
-uitest.directive('scopFalse',[function(){
+uitest.directive('scopeFalse',[function(){
 	return {
 		restrict: 'A',
 		link: function($scope, $element, $attrs){

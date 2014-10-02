@@ -44,6 +44,20 @@
             
             
         </div>
+        <div id="test" ng-controller="demoTestController">
+            <div class="container">
+                <h1>AngularJS learning test</h1>
+                <section>
+                    <h2>What will happen if scope = false ?</h2>
+                    <span>{{title}}</span>
+                    <div scope-false>
+                        <button ng-click="setDirectiveTitle('vivi')"> set title</button>
+                        {{title}}
+                    </div>
+                </section>
+
+            </div>
+        </div>
         <footer>
             <div class="container">
                 Author: Vivi Jiang <b>vivijiang.dev@gmail.com</b>
@@ -52,9 +66,9 @@
         <script src="../lib/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
         <script src="../directives/odin.ui.js" type="text/javascript"></script>
         <script src="../directives/odin.ui.form.js" type="text/javascript"></script>
-            <script src="../directives/odin.ui.test.js" type="text/javascript"></script>
+        <script src="../directives/odin.ui.test.js" type="text/javascript"></script>
         <script src="../js/main.js" type="text/javascript"></script>
         <script src="../js/demo.form.js" type="text/javascript"></script>
-         <script src="../js/demo.test.js" type="text/javascript"></script>
+        <script src="../js/demo.test.js" type="text/javascript"></script>
     </body>
 </html>

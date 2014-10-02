@@ -48,4 +48,23 @@ uitest.directive('scopeTrue',[function(){
 	};
 }]);
 
+uitest.directive('scopeObject',[function(){
+	return {
+		restrict: 'A',
+		scope: {
+			'objtitle': '@', //'readonlyTitle': '@',
+			'twowayTitle': '=',
+			'internalFunction': '&'
+		},
+		link: function($scope, $element, $attrs){
+			
+			$scope.setDirectiveObjTitle =function(title){
+				debugger;
+			 $scope.objtitle=title;
+			};
+		}
+	};
+}]);
+
+
 })(jQuery);

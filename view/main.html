@@ -49,24 +49,33 @@
                 <h1>AngularJS learning test</h1>
                 <section>
                     <h2>What will happen if scope = false ?</h2>
-                     <button ng-click="setAppTitle('app')"> set app title</button>
+                    <button ng-click="setAppTitle('app')"> set app title</button>
                     <span>{{title}}</span>
                     <div scope-false>
-                        <button ng-click="setDirectiveTitle('vivi')"> set directive title</button>
+                        <button ng-click="setDirectiveTitle('false vivi')"> set directive title</button>
                         {{title}}
                     </div>
                 </section>
-
-                 <section>
+                <section>
                     <h2>What will happen if scope = true ?</h2>
-                     <button ng-click="setAppTitle('app')"> set app title</button>
+                    <button ng-click="setAppTitle('app')"> set app title</button>
                     <span>{{title}}</span>
                     <div scope-true>
-                        <button ng-click="setDirectiveTitle('vivi')"> set directive title</button>
+                        <button ng-click="setDirectiveTitle('true vivi')"> set directive title</button>
                         {{title}}
                     </div>
                 </section>
+                <section>
+                    <h2>What will happen if scope = object ?</h2>
+                    <button ng-click="setObjTitle('change objtitle')"> set app title</button>
+                    <span>{{objtitle}}</span>
+                    <div scope-object>
+                        <button ng-click="setDirectiveObjTitle('obj vivi')"> set directive title</button>
 
+                        <span objtitle="directive title: {{objtitle}}"></span>
+                        {{objtitle}}
+                    </div>
+                </section>
             </div>
         </div>
         <footer>
